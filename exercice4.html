@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 4</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+      let prenom = prompt("quel est votre prénom ?");
+      let ages = prompt("quel est votre age ?");
+      let age = Number(ages);
+      let anneenaissance = 2025 - age ;
+      alert(`Bonjour ${prenom} ! voici votre annee de naissance ${anneenaissance}`);
+      let afficher_console =confirm("voulez vous voir vos infos ?");
+      if (afficher_console == true){
+            console.log("Prenom :", prenom);
+            console.log("age :", age);
+            console.log("Annee de naissance :", anneenaissance);
+      }
+      else {
+        console.log("pas d'affichage demandé");
+      }
+    </script>
+  </body>
+</html>
